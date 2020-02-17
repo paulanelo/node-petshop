@@ -1,0 +1,25 @@
+{
+  "name": "node-petshop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulanelo/node-petshop.git"
+  },
+  "keywords": [],
+  "author": "paulanelo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paulanelo/node-petshop/issues"
+  },
+  "homepage": "https://github.com/paulanelo/node-petshop#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  },
+  "dependencies": {}
+}
