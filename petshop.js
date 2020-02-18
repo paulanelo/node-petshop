@@ -3,7 +3,7 @@ let petList = ['Bob', 'Tiger', 'July'];
 const addPet = (nome) => petList.push(nome);
 
 const listPets = () => {
-    return petList.reduce((a, c, id) => a += `<br><strong>${id+1} Nome do pet:</strong> ${c}<br>---------------------------`,'---------------------------');
+    return petList.reduce((a, c, id) => a += `<br><strong>${id+1} Nome do pet:</strong> ${c} <a href="deletarPorId/${id}"><button>X</button></a><br>---------------------------`,'---------------------------');
 }
 
 const deletePet = (nome) => {

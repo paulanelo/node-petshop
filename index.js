@@ -14,10 +14,8 @@ const server = http.createServer((req, res) => {
         );
       }
     case /\/listar$/.test(req.url):
-      console.log("listar");
       return res.end(listPets());
     case /\/listar.+/.test(req.url):
-      console.log("with param");
       if (name) {
         const result = findPet(name);
         console.log(result);
@@ -42,6 +40,10 @@ const server = http.createServer((req, res) => {
           `Não foi possível excluir o pet ${name}. Verifique o nome e tente novamente. <a href="/listar">Ver lista</a>`
         );
       }
+    
+    case /\deletarPorId/.test(req.url):
+        return res.end('to be continued...')
+
     default:
       return res.end("Você está dentro do sistema petshop!");
   }
